@@ -9,7 +9,7 @@
 Calculator::Calculator(QWidget *parent) : QWidget(parent),
     m_nCurrentIndex(-1)
 {
-    // 固定窗口大小为800x480，和野火开发板一致
+    // 固定窗口大小为800x480
     setFixedSize(800, 480);
 
     m_bInputSymbol = false;
@@ -17,7 +17,7 @@ Calculator::Calculator(QWidget *parent) : QWidget(parent),
 
     express_lineEdit = new QLineEdit(this);
     express_lineEdit->setContextMenuPolicy(Qt::NoContextMenu);
-    // 替换掉Skin::m_strAppFontBold，使用系统默认字体
+    // 使用系统默认字体
     express_lineEdit->setStyleSheet("QLineEdit{border: none; font: bold 40px Arial; color: #333333;}");
     express_lineEdit->setAlignment(Qt::AlignRight);
     express_lineEdit->setFocus();
@@ -192,7 +192,7 @@ void Calculator::onButtonClicked(CalcButton *btn)
     this->update();
 }
 
-// 删掉了原来的resizeEvent函数，因为我们固定了窗口大小
+// 固定了窗口大小
 
 void Calculator::paintEvent(QPaintEvent *)
 {
