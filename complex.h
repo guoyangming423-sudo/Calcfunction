@@ -3,6 +3,7 @@
 
 #include <QString>
 
+// 全局常量定义
 const double DBL_EPS=1e-20, pi=3.141592653589793238, e=2.71828182845905;
 class Complex
 {

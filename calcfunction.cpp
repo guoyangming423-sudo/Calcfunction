@@ -241,7 +241,7 @@ int CCalculator::GetNextSymbol(QQueue<Symbol>&que,Symbol &sym)
     QChar ch=m_strExp[m_curIndex];
     while(ch==' ')
     {ch=m_strExp[++m_curIndex];}
-    if(ch=='$')//常量
+    if(ch=='$')   //常量
     {
         QString str;
         ERRORLENGTH=0;

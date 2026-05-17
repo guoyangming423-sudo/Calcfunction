@@ -2,7 +2,7 @@
 #define CALCULATOR_H
 
 #include <QWidget>
-#include "calcfunction.h"
+#include "calcfunction.h"     // 计算器核心计算功能头文件
 
 #include <QMap>
 #include <QLineEdit>

@@ -1,6 +1,6 @@
 //有关复数运算
 #include "complex.h"
-#include <qmath.h>
+#include <qmath.h>   // Qt数学库，提供sqrt、atan、sin、cos、log等函数
 
 //有关复数运算
 Complex& Complex:: operator = (Complex c)
